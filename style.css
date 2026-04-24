@@ -1,0 +1,186 @@
+/* --- Global Styles & Resets --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Elegant background texture for the page, like a dark fabric */
+    background: #11111b; /* Extra dark navy/charcoal */
+    background-image: 
+        radial-gradient(#1a1a2e 1px, transparent 1px), 
+        radial-gradient(#1a1a2e 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-font-smoothing: antialiased; /* Better font rendering on macOS */
+}
+
+/* --- Container for Centering & Sizing --- */
+.invitation-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px; /* Optional: adds subtle depth to the card */
+}
+
+/* --- The Card Itself --- */
+.card {
+    background-color: #0b0c10; /* Deepest black/blue */
+    width: 600px; /* Fixed width for a classic card feel */
+    min-height: 400px; /* Base height */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7); /* Deep, soft shadow */
+    border: 2px solid #c5a059; /* Elegant brushed gold border */
+    position: relative;
+    overflow: hidden; /* Contains elements like the subtle glow */
+}
+
+/* Adds a subtle "digital energy" glow in the background */
+.card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(197, 160, 89, 0.03) 0%, rgba(11, 12, 16, 0) 70%);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+/* Move content above the pseudo-element glow */
+header, main, footer, .separator {
+    position: relative;
+    z-index: 2;
+}
+
+/* --- Font Definitions --- */
+/* A classy serif font for titles */
+.invitation-title, .sub-title, .personal-message {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* A monospaced 'code' font for all the code elements */
+.code-comment, .code-block, .code-line, .signature, .line, .const, .var-name, .key, .string, .function {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+/* --- Header & Title --- */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.invitation-title {
+    color: #e0e0e0; /* Off-white */
+    font-size: 2.6rem;
+    margin: 10px 0;
+    line-height: 1.1;
+}
+
+/* Code Variable Declaration Styling (Syntax Highlighting) */
+.const { color: #f92672; font-weight: 600;} /* Pink/Red keyword */
+.var-name { color: #fd971f; } /* Orange variable name */
+.string { color: #a6e22e; }   /* Green string value */
+
+.sub-title {
+    color: #a8a8a8;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* The separator hr */
+.separator {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.separator hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(197, 160, 89, 0), rgba(197, 160, 89, 0.75), rgba(197, 160, 89, 0));
+}
+
+/* --- Main Content: Event Details --- */
+.event-details {
+    padding: 10px 0;
+}
+
+/* Styling the JSON-like object */
+.code-block {
+    background-color: #0d0e12; /* Slightly different dark bg for the block */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid #c5a059; /* A small accent */
+    margin: 20px 0;
+}
+
+.line {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d0d0d0;
+}
+
+/* Syntax Highlighting for the details */
+.key { color: #66d9ef; }    /* Blue keys */
+.string { color: #a6e22e; }   /* Green string values */
+.code-comment { color: #75715e; font-style: italic;} /* Gray/Yellowish comments */
+
+/* Line Indentation Classes */
+.indent-1 { padding-left: 20px; }
+.indent-2 { padding-left: 40px; }
+
+.personal-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #a8a8a8;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* --- Footer --- */
+footer {
+    border-top: 1px solid rgba(197, 160, 89, 0.3);
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.code-line {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.function { color: #ae81ff; } /* Purple for function calls */
+
+.signature {
+    margin-top: 20px;
+    color: #75715e;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+          .contact-grid {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(189, 147, 249, 0.05);
+            border-radius: 4px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            border-top: 1px solid #222;
+            padding-top: 20px;
+        }
+
