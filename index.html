@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Invitation | Celisia & Pasha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-black: #050505;
+            --royal-purple: #6a0dad;
+            --electric-purple: #9d50bb;
+            --text-silver: #e0e0e0;
+            --comment-gray: #6272a4;
+        }
+
+        body {
+            background-color: var(--deep-black);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Fira Code', monospace;
+            color: var(--text-silver);
+        }
+
+        .card {
+            width: 550px;
+            padding: 50px;
+            background: linear-gradient(145deg, #0f0f0f, #050505);
+            border: 1px solid var(--royal-purple);
+            box-shadow: 0 0 30px rgba(106, 13, 173, 0.3);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .comment { color: var(--comment-gray); font-style: italic; }
+        .keyword { color: var(--electric-purple); font-weight: bold; }
+        .string { color: #f8f8f2; }
+        .function { color: #bd93f9; }
+
+        header { text-align: center; margin-bottom: 40px; }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: var(--electric-purple);
+            margin: 10px 0;
+        }
+
+        .parents {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            border-left: 2px solid var(--royal-purple);
+            padding-left: 15px;
+        }
+
+        .main-event {
+            background: rgba(106, 13, 173, 0.05);
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .line { margin: 8px 0; }
+        .indent { padding-left: 25px; }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <header>
+        <div class="comment">// A union of two souls and two families</div>
+        <h1>Celisia & Pasha</h1>
+    </header>
+
+    <div class="parents">
+        <div class="line"><span class="keyword">import</span> { Celisia } <span class="keyword">from</span> <span class="string">'Paracida Da Silva'</span>;</div>
+        <div class="line"><span class="keyword">import</span> { Pasha } <span class="keyword">from</span> <span class="string">'Pasha'</span>;</div>
+    </div>
+
+    <div class="main-event">
+        <div class="line"><span class="keyword">function</span> <span class="function">beginJourney</span>() {</div>
+        <div class="line indent"><span class="keyword">const</span> <span class="string">date</span> = <span class="string">"May 22, 2026"</span>;</div>
+        <div class="line indent"><span class="keyword">const</span> <span class="string">location</span> = <span class="string">"Marilia, Brazil"</span>;</div>
+        <div class="line">}</div>
+    </div>
+
+    <footer>
+        <div class="line">await <span class="function">yourPresence</span>();</div>
+        <div class="comment" style="margin-top: 15px;">/* Colour of the Day: Purple & Black */</div>
+    </footer>
+</div>
+
+</body>
+</html>
+  
